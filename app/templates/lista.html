@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <h1>lista</h1>
+
+    {% for i in animales %}
+
+        <ul class="ok">
+
+            <a href="{% url 'lista_d' i.id %}"> {{ i.nombre }} </a>
+
+        </ul>
+
+    {% endfor %}
+
+{% endblock %}

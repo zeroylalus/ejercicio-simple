@@ -1,0 +1,17 @@
+
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <h1>{{ animales }}</h1>
+
+    {% for i in atributos %}
+
+        <ul>
+            <li> {{ i.animal.name }} </li>
+            <li> {{ i.descripcion }} </li>
+        </ul>
+
+    {% endfor %}
+
+{% endblock %}

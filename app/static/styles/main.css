@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.nav{
+    background-color: brown;
+    color: black;
+    padding: 10px;
+    margin-top: 5px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav ul li a{
+    color: black;
+    padding: 11px 155px;
+    font-family: Lucida Console;
+}
+.nav ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.main{
+    background-color: #202020;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ok {
+    display: flex;
+}

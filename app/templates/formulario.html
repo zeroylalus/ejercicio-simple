@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<h1>formulario</h1>
+
+<form method="POST">
+
+    {% csrf_token %}
+    {{ animales }}
+    <button>pelota</button>
+
+</form>
+
+<form method="POST">
+
+    {% csrf_token %}
+    {{ atributos }}
+    <button>balón</button>
+
+</form>
+
+{% endblock %}

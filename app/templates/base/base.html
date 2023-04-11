@@ -1,0 +1,19 @@
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'styles/main.css' %}">
+
+<nav class="nav"><ul>
+
+    <li><a href="{% url 'inicio' %}">INICIO</a></li>
+    <li><a href="{% url 'lista' %}">LISTA</a></li>
+    <li><a href="{% url 'formulario' %}">FORMULARIO</a></li>
+
+</ul></nav>
+
+<main class="main">
+
+    {% block content %}
+    {% endblock %} 
+
+</main>
